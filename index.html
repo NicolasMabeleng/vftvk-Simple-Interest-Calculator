@@ -11,9 +11,9 @@
                 <h1>Simple Interest Calculator</h1>
             </header>
             
-        <form id="information_form1">
+        <form id="information_form">
                 <div><label>Amount <input type="number"  id="principal"> </label></div>  <br/>
-                <div><label>Rate <input type="range" oninput="updateRateBySlider();" id="rate" min="1" max="20" step="0.25" value="10.25"  > </label> <label><input type="number"onblur="updateRateByInput();" id="rate_val" min="1" max="20" step="0.25" value="10.25">%</label></div>  <br/>
+                <div><label>Rate <input type="range" oninput="updateRateBySlider();" id="rate" min="1" max="20" step="0.25" value="10.25"></label> <label><input type="number"onblur="updateRateByInput();" id="rate_val" min="1" max="20" step="0.25" value="10.25">%</label></div>  <br/>
                 <div><label>No. of Years <select id="years"> 
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -26,8 +26,8 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </select></label></div> <br/>
-        <div><button onclick="compute()";return false;>Compute Interest</button></div>  <br/>
-        <output id="result"></output>
+        <div><button onclick="compute(); return false";>Compute Interest</button></div>  <br/>
+        <span id="result"></span>
         </form>
         <footer>
             <p> &#169; This Calculator belongs to Nicolas Mabeleng </p>
