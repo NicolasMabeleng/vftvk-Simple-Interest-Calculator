@@ -14,10 +14,10 @@ function compute()
     document.getElementById('result').innerHTML = 'If you deposit <span class="result_number">$'+parseInt(principal).toLocaleString()+'</span>, <br/>at an interest rate of <span class="result_number">'+rate+'%</span>. <br/>You will receive an amount of <span class="result_number">$'+parseFloat(interest).toLocaleString()+'</span>, <br/>in the year <span class="result_number">'+year+'</span>  <br/>'
 }
 
-function updateRate()
+function updateRateBySlider()
 {
-    var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    var rate_val =parseFloat(document.getElementById("rate")).value;
+    document.getElementById("rate_val").value = rate_val;
 }
 
 function updateRateByInput()
